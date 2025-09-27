@@ -1,0 +1,175 @@
+/* Highlight efek saat todo dipindahkan */
+.todo-moved {
+  animation: highlightMove 1s ease;
+}
+
+@keyframes highlightMove {
+  0% {
+    background-color: #d4edda;
+  } /* hijau muda */
+  100% {
+    background-color: transparent;
+  }
+}
+/* ===== GIRLY THEME STYLE ===== */
+body {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5, #fbe0ff, #e6ccff);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #4a235a;
+}
+
+/* Judul aplikasi */
+.main-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 2px 2px #ffd6eb;
+}
+
+/* Card */
+.card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+/* Tombol */
+.btn-primary {
+  background-color: #ff69b4;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #ff85c1;
+}
+
+.btn-success {
+  background-color: #ffb6c1;
+  border: none;
+  color: #4a235a;
+}
+.btn-success:hover {
+  background-color: #ff9eb3;
+}
+
+.btn-warning {
+  background-color: #ffd966;
+  border: none;
+  color: #4a235a;
+}
+.btn-warning:hover {
+  background-color: #ffe599;
+}
+
+.btn-danger {
+  background-color: #ff6f91;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #ff4f79;
+}
+
+.btn-secondary {
+  background-color: #d9b3ff;
+  border: none;
+  color: #4a235a;
+}
+.btn-secondary:hover {
+  background-color: #c9a0ff;
+}
+
+/* Input dan Select */
+.form-control,
+.form-select {
+  border-radius: 15px;
+  border: 2px solid #ffb6c1;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 6px #ffb6c1;
+}
+
+/* List Todo */
+.list-group-item {
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.list-group-item:hover {
+  transform: scale(1.02);
+  background: #fff0f5;
+}
+
+.list-group-item-success {
+  background: #fcd5e5 !important;
+}
+
+/* Checkbox */
+.form-check-input {
+  border: 2px solid #ff69b4;
+}
+.form-check-input:checked {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+}
+
+/* Drag handle */
+.drag-handle {
+  cursor: grab;
+  color: #ff69b4;
+  font-size: 1.2rem;
+}
+.drag-handle:active {
+  cursor: grabbing;
+}
+
+/* Progress bar */
+.progress {
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-bar {
+  background: linear-gradient(to right, #ff69b4, #ff85c1, #fcb1d1);
+  transition: width 0.5s ease-in-out;
+}
+
+/* Empty state */
+#emptyState {
+  color: #b565a7;
+}
+#emptyState i {
+  color: #ff85c1;
+}
+
+/* Toast */
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.toast {
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Animasi saat todo dipindahkan */
+.todo-moved {
+  animation: highlightMove 1s ease;
+}
+@keyframes highlightMove {
+  0% {
+    background-color: #ffe6f0;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
