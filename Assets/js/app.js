@@ -1,9 +1,4 @@
-class TodoApp {
-  constructor() {
-    this.todos = [];
-    this.currentFilter = "all";
-    this.currentSearch = "";
-    this.editingId = null;
+
 
     this.initializeElements();
     this.loadTodos();
